@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Format Demo 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="../js/jsformat.js"></script>
+    </head>
+    <body>
+        <h1>JSON Format Demo 2</h1>
+        <p>Paste your JSON in textarea; and hit format</p>
+        <textarea cols="100" rows="30" name="txt" id="txt">
+            
+        </textarea>
+        <br />
+        
+        <button onclick="formateNow()">
+            Format
+        </button>
+        <script>
+            function formateNow()
+            {
+                var formator = new JsFormatter();
+                document.getElementById('txt').value = formator.format(document.getElementById('txt').value.trim());
+            }
+        </script>
+
+    </body>
+</html>
