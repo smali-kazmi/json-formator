@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Format Demo 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="../js/jsformat.js"></script>
+    </head>
+    <body>
+        <h1>JSON Format Demo 3 with default object</h1>
+        <textarea cols="100" rows="30" name="txt" id="txt">
+            
+        </textarea>
+        <script>
+            var data = '{"number":1,"string":"Stirng is here","float":1.4,"boolean_true":true,"boolean_false":false,"object":[1,2,3,4,5],"nested":{"level 1":{"number":1,"string":"Stirng is here","float":1.4,"boolean_true":true,"boolean_false":false,"level 2":{"number":1,"string":"Stirng is here","float":1.4,"boolean_true":true,"boolean_false":false,"level 3":{"number":1,"string":"Stirng is here","float":1.4,"boolean_true":true,"boolean_false":false}}}}}';
+            document.getElementById('txt').value = $_jsformat(data);
+        </script>
+
+    </body>
+</html>
